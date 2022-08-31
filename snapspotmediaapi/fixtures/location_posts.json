@@ -1,0 +1,14 @@
+[
+    {
+        "model": "snapspotmediaapi.locationpost",
+        "pk": 1,
+        "fields": {
+            "title": "Fall Creek Falls",
+            "description": "wonderful waterfalls. can't get to it with stance cars",
+            "locationImg": "url",
+            "driver": 1,
+            "locationId_id": 42,
+            "location_type_id": 1
+        }
+    }
+]
