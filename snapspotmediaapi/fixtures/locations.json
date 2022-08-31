@@ -1,0 +1,352 @@
+[
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 1,
+        "fields": {
+            "locationName": "Alabama"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 2,
+        "fields": {
+            "locationName": "Alaska"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 3,
+        "fields": {
+            "locationName": "Arkansas"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 4,
+        "fields": {
+            "locationName": "California"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 5,
+        "fields": {
+            "locationName": "Colorado"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 6,
+        "fields": {
+            "locationName": "Connecticut"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 7,
+        "fields": {
+            "locationName": "Delaware"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 8,
+        "fields": {
+            "locationName": "Florida"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 9,
+        "fields": {
+            "locationName": "Georgia"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 10,
+        "fields": {
+            "locationName": "Hawaii"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 11,
+        "fields": {
+            "locationName": "Idaho"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 12,
+        "fields": {
+            "locationName": "Illinois"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 13,
+        "fields": {
+            "locationName": "Indiana"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 14,
+        "fields": {
+            "locationName": "Iowa"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 15,
+        "fields": {
+            "locationName": "Kansas"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 16,
+        "fields": {
+            "locationName": "Kentucky"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 17,
+        "fields": {
+            "locationName": "Louisiana"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 18,
+        "fields": {
+            "locationName": "Maine"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 19,
+        "fields": {
+            "locationName": "MaryLand"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 20,
+        "fields": {
+            "locationName": "Arizona"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 21,
+        "fields": {
+            "locationName": "Massachusetts"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 22,
+        "fields": {
+            "locationName": "Michigan"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 23,
+        "fields": {
+            "locationName": "Minnesota"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 24,
+        "fields": {
+            "locationName": "Mississippi"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 25,
+        "fields": {
+            "locationName": "Missouri"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 26,
+        "fields": {
+            "locationName": "Montana"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 27,
+        "fields": {
+            "locationName": "Nebraska"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 28,
+        "fields": {
+            "locationName": "Nevada"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 29,
+        "fields": {
+            "locationName": "New Hampshire"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 30,
+        "fields": {
+            "locationName": "New Jersey"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 31,
+        "fields": {
+            "locationName": "New Mexico"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 32,
+        "fields": {
+            "locationName": "New York"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 33,
+        "fields": {
+            "locationName": "North Carolina"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 34,
+        "fields": {
+            "locationName": "North Dakota"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 35,
+        "fields": {
+            "locationName": "Ohio"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 36,
+        "fields": {
+            "locationName": "Oklahoma"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 37,
+        "fields": {
+            "locationName": "Oregon"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 38,
+        "fields": {
+            "locationName": "Pennsylvania"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 39,
+        "fields": {
+            "locationName": "Rhode Island"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 40,
+        "fields": {
+            "locationName": "South Carolina"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 41,
+        "fields": {
+            "locationName": "South Dakota"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 42,
+        "fields": {
+            "locationName": "Tennessee"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 43,
+        "fields": {
+            "locationName": "Texas"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 44,
+        "fields": {
+            "locationName": "Utah"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 45,
+        "fields": {
+            "locationName": "Vermont"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 46,
+        "fields": {
+            "locationName": "Virginia"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 47,
+        "fields": {
+            "locationName": "Washington"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 48,
+        "fields": {
+            "locationName": "West Virginia"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 49,
+        "fields": {
+            "locationName": "Wisconsin"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.location",
+        "pk": 50,
+        "fields": {
+            "locationName": "Wyoming"
+        }
+    }
+]
