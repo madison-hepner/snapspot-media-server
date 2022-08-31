@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='locationtype',
             name='locationId',
-            field=models.ForeignKey(default=django.utils.timezone.now, on_delete=django.db.models.deletion.CASCADE, to='snapspotmediaapi.location'),
+            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='snapspotmediaapi.location'),
             preserve_default=False,
         ),
     ]

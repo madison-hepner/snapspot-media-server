@@ -14,13 +14,17 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='LocationPost',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True,
+                 primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=55)),
                 ('description', models.CharField(max_length=55)),
                 ('locationImg', models.CharField(max_length=55)),
-                ('driver', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='snapspotmediaapi.driver')),
-                ('locationId', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='snapspotmediaapi.location')),
-                ('location_type', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='snapspotmediaapi.locationtype')),
+                ('driver', models.ForeignKey(
+                    on_delete=django.db.models.deletion.DO_NOTHING, to='snapspotmediaapi.driver')),
+                ('locationId', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, to='snapspotmediaapi.location')),
+                ('location_type', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, to='snapspotmediaapi.locationtype')),
             ],
         ),
     ]
