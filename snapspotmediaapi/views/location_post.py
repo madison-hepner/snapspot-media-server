@@ -43,7 +43,6 @@ class LocationPostView(ViewSet):
         location_post.title = request.data["title"]
         location_post.description = request.data["description"]
         location_post.locationImg = request.data["locationImg"]
-        location_post.driver = request.data["driver"]
         location_post.locationId = request.data["locationId"]
 
         location_type = LocationType.objects.get(
