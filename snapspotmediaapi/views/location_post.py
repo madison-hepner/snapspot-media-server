@@ -19,45 +19,68 @@ class LocationPostView(ViewSet):
         location_posts = LocationPost.objects.all()
         serializer = LocationPostSerializer(location_posts, many=True)
         return Response(serializer.data)
-
+        
     def create(self, request):
         """Handle POST operations
 
-        Returns:
+        Returns
             Response -- JSON serialized game instance
         """
         driver = Driver.objects.get(user=request.auth.user)
-        serializer = CreateLocationPostSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        serializer.save(driver=driver)
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
+        location_type = LocationType.objects.get(pk=request.data["location_type"])
+        locationId = Location.objects.get(pk=request.data["locationId"])
 
-    def update(self, request, pk):
-        """Handle PUT requests for a game
+        location_post = LocationPost.objects.create(
+            title=request.data["title"],
+            description=request.data["description"],
+            locationImg=request.data["locationImg"],
+            driver=driver,
+            location_type=location_type,
+            locationId=locationId
+        )
+        serializer = LocationPostSerializer(location_post)
+        return Response(serializer.data)
 
-        Returns:
-            Response -- Empty body with 204 status code
-        """
+    # def create(self, request):
+    #     driver = Driver.objects.get(user=request.auth.user)
 
-        location_post = LocationPost.objects.get(pk=pk)
-        location_post.title = request.data["title"]
-        location_post.description = request.data["description"]
-        location_post.locationImg = request.data["locationImg"]
-        location_post.locationId = request.data["locationId"]
+    #     location_post = LocationPost.objects.create(
+    #         title=request.data["title"],
+    #         description=request.data["description"],
+    #         locationImg=request.data["locationImg"],
+    #         locationId=locationId,
+    #         driver=driver,
+    #         location_type=location_type
+    #     )
+    #     serializer = LocationPostSerializer(location_post)
+    #     return Response(serializer.data)
 
-        location_type = LocationType.objects.get(
-            pk=request.data["location_type"])
-        location_post.location_type = location_type
-        location_post.save()
+    # def update(self, request, pk):
+    #     """Handle PUT requests for a game
 
-        return Response(None, status=status.HTTP_204_NO_CONTENT)
+    #     Returns:
+    #         Response -- Empty body with 204 status code
+    #     """
+
+    #     location_post = LocationPost.objects.get(pk=pk)
+    #     location_post.title = request.data["title"]
+    #     location_post.description = request.data["description"]
+    #     location_post.locationImg = request.data["locationImg"]
+    #     location_post.locationId = request.data["locationId"]
+
+    #     location_type = LocationType.objects.get(
+    #         pk=request.data["location_type"])
+    #     location_post.location_type = location_type
+    #     location_post.save()
+
+    #     return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 
-class CreateLocationPostSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = LocationPost
-        fields = ['id', 'title', 'description', 'locationImg',
-                  'driver', 'locationId', 'location_type']
+# class CreateLocationPostSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = LocationPost
+#         fields = ['id', 'title', 'description',
+#                   'locationImg', 'locationId', 'location_type']
 
 
 class LocationPostSerializer(serializers.ModelSerializer):
