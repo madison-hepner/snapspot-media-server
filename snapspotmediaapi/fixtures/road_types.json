@@ -1,0 +1,23 @@
+[
+    {
+        "model": "snapspotmediaapi.roadtype",
+        "pk": 1,
+        "fields": {
+            "road_type": "Off-Road"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.roadtype",
+        "pk": 2,
+        "fields": {
+            "road_type": "Stance Friendly"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.roadtype",
+        "pk": 3,
+        "fields": {
+            "road_type": "Backroad"
+        }
+    }
+]

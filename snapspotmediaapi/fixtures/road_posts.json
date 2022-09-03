@@ -1,0 +1,15 @@
+
+[
+    {
+        "model": "snapspotmediaapi.roadpost",
+        "pk": 1,
+        "fields": {
+            "road_name": "McCrory Lane",
+            "description": "wonderful waterfalls. can't get to it with stance cars",
+            "locationImg": "url",
+            "driver": 1,
+            "locationId_id": 42,
+            "road_type": 1
+        }
+    }
+]
