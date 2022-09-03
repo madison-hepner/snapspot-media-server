@@ -42,6 +42,32 @@ class RoadPostView(ViewSet):
         )
         serializer = RoadPostSerializer(road_post)
         return Response(serializer.data)
+    
+    def update(self, request, pk):
+            """Handle PUT requests for a game
+
+            Returns:
+                Response -- Empty body with 204 status code
+            """
+
+            road_post = RoadPost.objects.get(pk=pk)
+            road_post.road_name = request.data["road_name"]
+            road_post.description = request.data["description"]
+            road_post.locationImg = request.data["locationImg"]
+            
+
+            road_type = RoadType.objects.get(
+                pk=request.data["road_type"])
+            road_post.road_type = road_type
+            
+            
+            locationId = Location.objects.get(
+                pk=request.data["locationId"])
+            road_post.locationId = locationId
+            
+            road_post.save()
+
+            return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 
 class RoadPostSerializer(serializers.ModelSerializer):
