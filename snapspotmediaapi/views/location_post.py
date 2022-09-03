@@ -41,39 +41,31 @@ class LocationPostView(ViewSet):
         serializer = LocationPostSerializer(location_post)
         return Response(serializer.data)
 
-    # def create(self, request):
-    #     driver = Driver.objects.get(user=request.auth.user)
+    def update(self, request, pk):
+        """Handle PUT requests for a game
 
-    #     location_post = LocationPost.objects.create(
-    #         title=request.data["title"],
-    #         description=request.data["description"],
-    #         locationImg=request.data["locationImg"],
-    #         locationId=locationId,
-    #         driver=driver,
-    #         location_type=location_type
-    #     )
-    #     serializer = LocationPostSerializer(location_post)
-    #     return Response(serializer.data)
+        Returns:
+            Response -- Empty body with 204 status code
+        """
 
-    # def update(self, request, pk):
-    #     """Handle PUT requests for a game
+        location_post = LocationPost.objects.get(pk=pk)
+        location_post.title = request.data["title"]
+        location_post.description = request.data["description"]
+        location_post.locationImg = request.data["locationImg"]
+        
 
-    #     Returns:
-    #         Response -- Empty body with 204 status code
-    #     """
+        location_type = LocationType.objects.get(
+            pk=request.data["location_type"])
+        location_post.location_type = location_type
+        
+        
+        locationId = Location.objects.get(
+            pk=request.data["locationId"])
+        location_post.locationId = locationId
+        
+        location_post.save()
 
-    #     location_post = LocationPost.objects.get(pk=pk)
-    #     location_post.title = request.data["title"]
-    #     location_post.description = request.data["description"]
-    #     location_post.locationImg = request.data["locationImg"]
-    #     location_post.locationId = request.data["locationId"]
-
-    #     location_type = LocationType.objects.get(
-    #         pk=request.data["location_type"])
-    #     location_post.location_type = location_type
-    #     location_post.save()
-
-    #     return Response(None, status=status.HTTP_204_NO_CONTENT)
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 
 # class CreateLocationPostSerializer(serializers.ModelSerializer):
