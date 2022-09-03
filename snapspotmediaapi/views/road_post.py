@@ -68,6 +68,11 @@ class RoadPostView(ViewSet):
             road_post.save()
 
             return Response(None, status=status.HTTP_204_NO_CONTENT)
+        
+    def destroy(self, request, pk):
+            road_post = RoadPost.objects.get(pk=pk)
+            road_post.delete()
+            return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 
 class RoadPostSerializer(serializers.ModelSerializer):
