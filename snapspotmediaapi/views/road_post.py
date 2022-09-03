@@ -36,7 +36,6 @@ class RoadPostView(ViewSet):
             road_name=request.data["road_name"],
             description=request.data["description"],
             locationImg=request.data["locationImg"],
-            skill_level=request.data["skill_level"],
             driver=driver,
             locationId=locationId,
             road_type=road_type

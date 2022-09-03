@@ -4,5 +4,5 @@ from .location import Location
 
 
 class Driver(models.Model):
-    userId = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     locationId = models.ForeignKey(Location, on_delete=models.CASCADE)
