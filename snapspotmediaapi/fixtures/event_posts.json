@@ -1,0 +1,14 @@
+
+[
+    {
+        "model": "snapspotmediaapi.eventpost",
+        "pk": 1,
+        "fields": {
+            "event_name": "Tail of the Dragon Run",
+            "description": "gattlinburg run",
+            "location_type": 1,
+            "locationId_id": 42,
+            "driver": 1
+        }
+    }
+]
