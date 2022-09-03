@@ -1,0 +1,26 @@
+[
+    {
+        "model": "snapspotmediaapi.locationtype",
+        "pk": 1,
+        "fields": {
+            "locationId_id": 1,
+            "location_type": "Mountain"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.locationtype",
+        "pk": 2,
+        "fields": {
+            "locationId_id": 1,
+            "location_type": "Hills"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.locationtype",
+        "pk": 3,
+        "fields": {
+            "locationId_id": 1,
+            "location_type": "River"
+        }
+    }
+]
