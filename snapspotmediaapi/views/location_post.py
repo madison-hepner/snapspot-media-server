@@ -66,6 +66,11 @@ class LocationPostView(ViewSet):
         location_post.save()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
+    
+    def destroy(self, request, pk):
+        location_post = LocationPost.objects.get(pk=pk)
+        location_post.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 
 # class CreateLocationPostSerializer(serializers.ModelSerializer):
