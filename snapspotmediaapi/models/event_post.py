@@ -2,6 +2,7 @@ from django.db import models
 from .location import Location
 from .location_type import LocationType
 from .driver import Driver
+import datetime
 
 
 class EventPost(models.Model):
@@ -10,3 +11,4 @@ class EventPost(models.Model):
     locationId = models.ForeignKey(Location, on_delete=models.CASCADE)
     location_type = models.ForeignKey(LocationType, on_delete=models.CASCADE)
     driver = models.ForeignKey(Driver, on_delete=models.DO_NOTHING)
+    date = models.DateField(("Date"), default=datetime.date.today)
