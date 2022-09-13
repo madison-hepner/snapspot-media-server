@@ -1,11 +1,11 @@
 [
     {
         "model": "snapspotmediaapi.locationpost",
-        "pk": 1,
+        "pk": 2,
         "fields": {
             "title": "Fall Creek Falls",
             "description": "wonderful waterfalls. can't get to it with stance cars",
-            "locationImg": "url",
+            "locationImg": "https://images.rove.me/w_740,q_85/ceb8l8zypmcvi1xabfgn/tennessee-natchez-trace-parkway.jpg",
             "driver": 1,
             "locationId_id": 42,
             "location_type_id": 1

@@ -35,7 +35,8 @@ class EventPostView(ViewSet):
             description=request.data["description"],
             driver=driver,
             location_type=location_type,
-            locationId=locationId
+            locationId=locationId,
+            date=request.data["date"]
         )
         serializer = EventPostSerializer(event_post)
         return Response(serializer.data)
@@ -50,6 +51,7 @@ class EventPostView(ViewSet):
         event_post = EventPost.objects.get(pk=pk)
         event_post.event_name = request.data["event_name"]
         event_post.description = request.data["description"]
+        event_post.date = request.data["date"]
 
         location_type = LocationType.objects.get(
             pk=request.data["location_type"])
@@ -83,4 +85,4 @@ class EventPostSerializer(serializers.ModelSerializer):
     class Meta:
         model = EventPost
         fields = ('id', 'event_name', 'description', 'driver', 
-                  'locationId', 'location_type')
+                  'locationId', 'location_type', 'date')

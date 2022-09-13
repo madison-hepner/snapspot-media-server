@@ -8,7 +8,8 @@
             "description": "gattlinburg run",
             "location_type": 1,
             "locationId_id": 42,
-            "driver": 1
+            "driver": 1,
+            "date": "2022-09-08"
         }
     }
 ]
