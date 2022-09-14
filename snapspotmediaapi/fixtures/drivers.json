@@ -3,7 +3,7 @@
         "model": "snapspotmediaapi.driver",
         "pk": 1,
         "fields": {
-            "userId": 1,
+            "user": 1,
             "locationId": 4
         }
     }
