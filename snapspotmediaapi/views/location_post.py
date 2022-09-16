@@ -87,3 +87,4 @@ class LocationPostSerializer(serializers.ModelSerializer):
         model = LocationPost
         fields = ('id', 'title', 'description', 'locationImg',
                   'driver', 'locationId', 'location_type')
+        depth = 1
