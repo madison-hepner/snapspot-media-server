@@ -82,3 +82,4 @@ class RoadPostSerializer(serializers.ModelSerializer):
         model = RoadPost
         fields = ('id', 'road_name', 'description', 'locationImg',
                   'driver', 'locationId', 'road_type')
+        depth = 1
