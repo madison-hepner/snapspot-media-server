@@ -22,5 +22,21 @@
             "locationId_id": 1,
             "location_type": "River"
         }
+    },
+    {
+        "model": "snapspotmediaapi.locationtype",
+        "pk": 4,
+        "fields": {
+            "locationId_id": 1,
+            "location_type": "Beach"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.locationtype",
+        "pk": 5,
+        "fields": {
+            "locationId_id": 1,
+            "location_type": "Lake"
+        }
     }
 ]

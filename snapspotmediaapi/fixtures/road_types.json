@@ -10,7 +10,7 @@
         "model": "snapspotmediaapi.roadtype",
         "pk": 2,
         "fields": {
-            "road_type": "Stance Friendly"
+            "road_type": "Low Car Friendly"
         }
     },
     {
@@ -18,6 +18,13 @@
         "pk": 3,
         "fields": {
             "road_type": "Backroad"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.roadtype",
+        "pk": 4,
+        "fields": {
+            "road_type": "Highway"
         }
     }
 ]

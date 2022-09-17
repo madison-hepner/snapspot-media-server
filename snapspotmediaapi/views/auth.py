@@ -57,7 +57,6 @@ def register_user(request):
         last_name=request.data['last_name']
     )
 
-    # Now save the extra info in the levelupapi_gamer table
     driver = Driver.objects.create(
         user=new_user,
         location_id=location

@@ -6,5 +6,13 @@
             "user": 1,
             "locationId": 4
         }
+    },
+    {
+        "model": "snapspotmediaapi.driver",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "locationId": 4
+        }
     }
 ]
