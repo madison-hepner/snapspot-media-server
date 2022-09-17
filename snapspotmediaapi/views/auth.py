@@ -58,8 +58,7 @@ def register_user(request):
     )
 
     driver = Driver.objects.create(
-        user=new_user,
-        location_id=location
+        user=new_user
     )
 
     # Use the REST Framework's token generator on the new user account
