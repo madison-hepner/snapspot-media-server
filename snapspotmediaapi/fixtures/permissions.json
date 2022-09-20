@@ -1,0 +1,30 @@
+[
+    {
+        "model": "snapspotmediaapi.permission",
+        "pk": 1,
+        "fields": {
+            "permission": "Read"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.permission",
+        "pk": 2,
+        "fields": {
+            "permission": "Edit"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.permission",
+        "pk": 3,
+        "fields": {
+            "permission": "Delete"
+        }
+    },
+    {
+        "model": "snapspotmediaapi.permission",
+        "pk": 4,
+        "fields": {
+            "permission": "Approve"
+        }
+    }
+]
