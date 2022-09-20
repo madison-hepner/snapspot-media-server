@@ -29,7 +29,8 @@ def login_user(request):
         token = Token.objects.get(user=authenticated_user)
         data = {
             'valid': True,
-            'token': token.key
+            'token': token.key,
+            'driverId': authenticated_user.driver.id
         }
         return Response(data)
     else:
@@ -69,5 +70,5 @@ def register_user(request):
     # Use the REST Framework's token generator on the new user account
     token = Token.objects.create(user=driver.user)
     # Return the token to the client
-    data = {'token': token.key}
+    data = {'token': token.key, 'driverId': driver.id}
     return Response(data)
