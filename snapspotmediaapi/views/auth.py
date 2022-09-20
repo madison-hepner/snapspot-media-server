@@ -60,9 +60,11 @@ def register_user(request):
     permissions = request.data['permissions']
 
     driver = Driver.objects.create(
-        user=new_user,
-        permissions=permissions
+        user=new_user
+
     )
+    
+    driver.permissions.set(permissions)
 
     # Use the REST Framework's token generator on the new user account
     token = Token.objects.create(user=driver.user)

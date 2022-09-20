@@ -5,3 +5,4 @@ from .road_type import RoadTypeView
 from .location_post import LocationPostView
 from .location_type import LocationTypeView
 from .event_post import EventPostView
+from .permission import PermissionView
