@@ -11,5 +11,17 @@
             "driver": 1,
             "date": "2022-09-08"
         }
+    },
+    {
+        "model": "snapspotmediaapi.eventpost",
+        "pk": 1,
+        "fields": {
+            "event_name": "Poker Run",
+            "description": "Annual car show in dickson",
+            "location_type": 1,
+            "locationId_id": 42,
+            "driver": 1,
+            "date": "2022-09-08"
+        }
     }
 ]

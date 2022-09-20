@@ -5,11 +5,23 @@
         "pk": 1,
         "fields": {
             "road_name": "McCrory Lane",
-            "description": "wonderful waterfalls. can't get to it with stance cars",
-            "locationImg": "url",
+            "description": "curvy backroad between bellevue and dickson",
+            "locationImg": "https://media.istockphoto.com/id/624770222/photo/fall-colors-on-a-backroad-in-gatlinburg-tn.webp?s=612x612&w=is&k=20&c=X8566emTZu5Q3FvCHwdMM5zNPYyEpfK9UcryKLxFMhE=",
             "driver": 1,
             "locationId_id": 42,
-            "road_type": 1
+            "road_type": 2
+        }
+    },
+    {
+        "model": "snapspotmediaapi.roadpost",
+        "pk": 2,
+        "fields": {
+            "road_name": "Needles Highway",
+            "description": "filled with cool landscapes with breath-taking sunsets",
+            "locationImg": "https://www.planetware.com/wpimages/2019/12/south-dakota-in-pictures-beautiful-places-to-photograph-needles-highway-custer-state-park.jpg",
+            "driver": 1,
+            "locationId_id": 44,
+            "road_type": 4
         }
     }
 ]

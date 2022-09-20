@@ -5,10 +5,47 @@
         "fields": {
             "title": "Fall Creek Falls",
             "description": "wonderful waterfalls. can't get to it with stance cars",
-            "locationImg": "https://images.rove.me/w_740,q_85/ceb8l8zypmcvi1xabfgn/tennessee-natchez-trace-parkway.jpg",
+            "locationImg": "https://d1shwc4yijf729.cloudfront.net/resized/1280x640/assets/2020/11/02/cover_21_5f9fc0cb28848.webp",
             "driver": 1,
             "locationId_id": 42,
             "location_type_id": 1
         }
+    },
+    {
+        "model": "snapspotmediaapi.locationpost",
+        "pk": 3,
+        "fields": {
+            "title": "Cheek Wood",
+            "description": "Botanical Gardens",
+            "locationImg": "https://www.trolleytours.com/wp-content/uploads/2016/07/nashville-cheekwood-estate-garden-480x270.jpg",
+            "driver": 1,
+            "locationId_id": 42,
+            "location_type_id": 2
+        }
+    },
+    {
+        "model": "snapspotmediaapi.locationpost",
+        "pk": 4,
+        "fields": {
+            "title": "Badlands",
+            "description": "Coolest landscape in South Dakota",
+            "locationImg": "https://www.planetware.com/wpimages/2019/12/south-dakota-in-pictures-beautiful-places-to-photograph-badlands-national-park.jpg",
+            "driver": 1,
+            "locationId_id": 41,
+            "location_type_id": 1
+        }
+    },
+    {
+        "model": "snapspotmediaapi.locationpost",
+        "pk": 5,
+        "fields": {
+            "title": "Zion",
+            "description": "beautiful",
+            "locationImg": "https://rt-homepage.roadtrippers.com/wp-content/uploads/2020/06/zion-hero-12.jpg",
+            "driver": 1,
+            "locationId_id": 44,
+            "location_type_id": 1
+        }
     }
+    
 ]
