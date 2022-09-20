@@ -17,6 +17,9 @@ class EventPostView(ViewSet):
         return Response(serializer.data)
 
     def list(self, request):
+        driver = Driver.objects.get(user=request.auth.user)
+        for event in event_posts:
+            event.joined = driver in event_posts.attendees.all()
         event_posts = EventPost.objects.all()
         serializer = EventPostSerializer(event_posts, many=True)
         return Response(serializer.data)
@@ -73,6 +76,25 @@ class EventPostView(ViewSet):
         event_post = EventPost.objects.get(pk=pk)
         event_post.delete()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
+    
+    @action(methods=['post'], detail=True)
+    def signup(self, request, pk):
+        """Handles a post request for signing up for an event"""
+
+        driver = Driver.objects.get(user=request.auth.user)
+        event_post = EventPost.objects.get(pk=pk)
+        event_post.attendees.add(driver)
+        return Response({'message': "nothing to see here"}, status=status.HTTP_201_CREATED)
+
+
+    @action(methods=["delete"], detail=True)
+    def leave(self, request, pk):
+        """Handles a delete request for leaving an event"""
+
+        driver = Driver.objects.get(user=request.auth.user)
+        event_post = EventPost.objects.get(pk=pk)
+        event_post.attendees.remove(driver)
+        return Response({'message': "Have fun being a hermit Alex"}, status=status.HTTP_204_NO_CONTENT)
 
 
 # class CreateLocationPostSerializer(serializers.ModelSerializer):
@@ -88,5 +110,5 @@ class EventPostSerializer(serializers.ModelSerializer):
     class Meta:
         model = EventPost
         fields = ('id', 'event_name', 'description', 'driver',
-                  'locationId', 'location_type', 'date')
+                  'locationId', 'location_type', 'date', 'joined')
         depth = 1

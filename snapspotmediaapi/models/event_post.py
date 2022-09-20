@@ -11,3 +11,13 @@ class EventPost(models.Model):
     location_type = models.ForeignKey(LocationType, on_delete=models.CASCADE)
     driver = models.ForeignKey(Driver, on_delete=models.DO_NOTHING)
     date = models.DateTimeField()
+    attendees = models.ManyToManyField(Driver, related_name="attending")
+
+    @property
+    def joined(self):
+        return self.__joined
+
+    # Setter
+    @joined.setter
+    def joined(self, value):
+        self.__joined = value
